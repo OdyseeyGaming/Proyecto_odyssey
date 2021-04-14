@@ -34,6 +34,7 @@ a{outline:none; text-decoration:none;}
 
 .fl_left, .imgl{float:left;}
 .fl_right, .imgr{float:right;}
+.fl_left{margin-top: 10px; }
 
 img{margin:0; padding:0; border:none;}
 .imgl, .imgr{border:1px solid #DFDFDF; padding:4px;}
@@ -54,8 +55,9 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 /* ----------------------------------------------Header------------------------------------- */
 
 #header{padding:30px 0 0 0;}
+/* Estilos h1*/
 #header h1, #header p, #header ul{margin:0; padding:0; list-style:none; line-height:normal;}
-#header h1 a{font-size:46px; color:#CCCCCC; background-color:#161616;}
+#header h1 a{font-size:60px; color:#C50909; background-color:#161616;}
 
 /* ----------------------------------------------TopBar------------------------------------- */
 
@@ -183,3 +185,98 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
     border-radius: 120px;
 }
 
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('images/pageLoader.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
+}
+
+
+/*----------------------------
+    loader 
+----------------------------*/
+
+
+
+.loader {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    position: fixed;
+	z-index: 9999999;
+	background: black;
+	width: 100%;
+	height: 100%;
+}
+
+.loader img {
+	width: 280px;
+}
+
+
+
+
+
+/*----------------------------
+    covid
+----------------------------*/
+
+.covid{
+    text-align: center;
+    background: #000000;
+}
+
+
+/*----------------------------
+    header
+----------------------------*/
+
+
+.fl_left h1{
+    font-family: fantasy !important;
+    
+} 
+
+.fl_left h2{
+    font-family: fantasy !important;
+    color: #C50909;
+    font-size: 25px !important;
+}
+
+
+.fl_left p {
+    font-family: impact !important;
+    font-size: 18px;
+    color: #E3BA04;
+    
+}
+
+.fl_right p{
+    color: #E3BA04;
+}
+
+.fl_right img{
+    border-radius: 20px !important;
+}
+
+.footbox h2{
+    color: white !important;
+}
+
+.footbox P{
+    color: white;
+}
+
+.title{
+    color: white;
+}

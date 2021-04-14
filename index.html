@@ -1,4 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--
 Template Name: PhotoFolio
 Author: <a href="http://www.os-templates.com/">OS Templates</a>
@@ -7,253 +8,315 @@ Licence: Free to use under our free template licence terms
 Licence URI: http://www.os-templates.com/template-terms
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<title>Odyssey.cl</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
-<script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
-<!-- tabs -->
-<script type="text/javascript" src="layout/scripts/jquery.ui.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function () {
-    $("#tabcontainer").tabs({
+  <title>Odyssey.cl</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+  <script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
+  <!--ajax-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  
+
+  <!-- tabs -->
+  <script type="text/javascript" src="layout/scripts/jquery.ui.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#tabcontainer").tabs({
         event: "click"
+      });
     });
-});
-</script>
-<!-- / tabs -->
-<script type="text/javascript" src="layout/scripts/jquery-photostack.js"></script>
-<!-- coinslider -->
-<script type="text/javascript" src="layout/scripts/jquery-coin-slider.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function () {
-    $('#portfolioslider').coinslider({
+  </script>
+  <!-- / tabs -->
+  <script type="text/javascript" src="layout/scripts/jquery-photostack.js"></script>
+  <!-- coinslider -->
+  <script type="text/javascript" src="layout/scripts/jquery-coin-slider.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#portfolioslider').coinslider({
         width: 480,
         height: 280,
         navigation: false,
         links: false,
         hoverPause: true
+      });
     });
-});
-</script>
-<!-- / coinslider -->
+  </script>
+  <!-- / coinslider -->
 </head>
+
+
+
 <body id="top">
-<div class="wrapper col1">
-  <div id="header" class="clear">
-    <div class="fl_left">
-      <h1><a href="index.html">Odyssey Gaming</a></h1>
-      <p>La Tienda para mejorar tu rendimiento</p>
-    </div>
-    <div class="fl_right"><a href="#"><img src="images/demo/icono.png" alt="" /></a></div>
-  </div>
-</div>
-<!-- ####################################################################################################### -->
-<div class="wrapper col1">
-  <div id="topbar" class="clear">
-    <ul id="topnav">
-      <li class="active"><a href="index.html">Inicio</a></li>
-      <li><a href="pages/style-demo.html">FAQ's</a></li>
-      <li><a href="#">Menu</a>
-        <ul>
-          <li><a href="#">Carrito de compras</a></li>
-          <li><a href="#">Iniciar Sesion</a></li>
-          <li><a href="#">Registrate</a></li>
-        </ul>
-      </li>
-      <li><a href="pages/portfolio.html">Nosotros</a></li>
-      <li class="last"><a href="pages/gallery.html">Productos</a></li>
-    </ul>
-    <form action="#" method="post" id="search">
-      <fieldset>
-        <legend>Site Search</legend>
-        <input type="text" value="Busca en nuestra tienda&hellip;" onfocus="this.value=(this.value=='Busca en nuestra tienda&hellip;')? '' : this.value ;" />
-        <input type="image" id="go" src="layout/images/search.gif" alt="Search" />
-      </fieldset>
-    </form>
-  </div>
-</div>
-<!-- ####################################################################################################### -->
-<div class="wrapper col1">
-  <div id="featured_slide"> 
-    <!-- ####################################################################################################### -->
-    <div id="slider">
-      <ul id="categories">
-        <li class="category">
-          <h2>Set up</h2>
-          <a href="#"><img src="images/demo/setup_1.jpg" alt="" /></a>
-          <p>Set up de Javiera Gatica armado por el equipo de odyssey.</p>
-        </li>
-        <li class="category">
-          <h2>Set up</h2>
-          <a href="#"><img src="images/demo/setup_simp_raul.png" alt="" /></a>
-          <p> Set up de Angela Ruiz Robles armado por el equipo de odyssey.</p>
-        </li>
-        <li class="category">
-          <h2>Set up</h2>
-          <a href="#"><img src="images/demo/perifericos_razer.jpg" alt="" /></a>
-          <p>Set up de Sebastian Fizcht armado por el equipo de odyssey.</p>
-        </li>
-        <li class="category">
-          <h2>Razer Hunstman</h2>
-          <a href="#"><img src="images/demo/periferico_raul_el_simp.png" alt="" /></a>
-          <p>Diseñado y probado por los jugadores del equipo Team Razer, este teclado para juegos cuenta con los switches Razer más rápidos que se han diseñado jamás.</p>
-          <p class="readmore"><a href="https://www2.razer.com/es-es/gaming-keyboards-keypads/razer-huntsman-tournament-edition" target="_BLANK">Leer mas &raquo;</a></p>
-        </li>
-        <li class="category">
-          <h2>Hyperx quadcast</h2>
-          <a href="#"><img src="images/demo/hyperx.jpg" alt="" /></a>
-          <p>El HyperX QuadCast es ideal para el aspirante a streamer que busca un micrófono de condensador con sonido de calidad. Viene con su propio soporte antivibraciones para ayudar a reducir los ruidos de la vida diaria.</p>
-          <p class="readmore"><a href="https://www.hyperxgaming.com/es/microphone/quadcast-gaming-microphone" target="_BLANK">Leer mas &raquo;</a></p>
-        </li>
-        <li class="category">
-          <h2>Logitech pro</h2>
-          <a href="#"><img src="images/demo/logitech.jpg" alt="" /></a>
-          <p>PRO Wireless está pensado para ser el ratón para gaming definitivo para los profesionales de eSports. Es un ratón para gaming con un rendimiento y una precisión inigualables, que proporciona la confianza necesarias para ganar.</p>
-          <p class="readmore"><a href="https://www.logitechg.com/es-es/products/gaming-mice/pro-wireless-mouse.910-005273.html" target="_BLANK">Leer mas &raquo;</a></p>
-        </li>
-        <li class="category">
-          <h2>Rog strix Helios</h2>
-          <a href="#"><img src="images/demo/sueno.jpg" alt="" /></a>
-          <p>Rog Strix Helios es un gabinete premium con tres paneles de vidrio templado, marco de aluminio refinado e iluminacion RGB integrada en el panel frontal.</p>
-          <p class="readmore"><a href="https://rog.asus.com/cases/rog-strix-helios-model/" target="_BLANK">Leer mas &raquo;</a></p>
-        </li>
-      </ul>
-      <a class="prev disabled"></a> <a class="next disabled"></a>
-      <div style="clear:both"></div>
-    </div>
-    <!-- ####################################################################################################### --> 
-  </div>
-</div>
-<!-- ####################################################################################################### -->
-<div class="wrapper col2">
-  <div id="container" class="clear"> 
-    <!-- ####################################################################################################### -->
-    <div id="tabcontainer">
-      <ul id="tabnav">
-        <li><a href="#tabs-1">Lo mas visto</a></li>
-        <li><a href="#tabs-2">Recomendacion de odyssey</a></li>
-        <li><a href="#tabs-3">Oferta!</a></li>
-      </ul>
-      <div id="tabs-1" class="tabcontainer">
-        <div id="hpage_services" class="clear">
-          <div class="block"><img src="images/demo/g502.jpg" alt="" /><strong>Logitech G502 HERO</strong>
-            <p>G502 HERO dispone de un sensor óptico avanzado para máxima precisión de seguimiento, iluminación RGB personalizada, perfiles de juego personalizados, de 200 a 25.600 dpi y pesas reposicionables.</p>
-          </div>
-          <div class="block"><img src="images/demo/mamba.jpg" alt="" /><strong>Razer Mamba Elite</strong>
-            <p>El Razer Mamba Elite es el icónico ratón para juegos que conoces y te encanta, que cuenta con la mayor iluminación Razer Chroma de la gama con 20 impresionantes zonas de iluminación.</p>
-          </div>
-          <div class="block last"><img src="images/demo/pulsefire.jpg" alt="" /><strong>HyperX Pulsefire Surge</strong>
-            <p> Pulsefire Surge cuenta con ajustes nativos de PPP de hasta 16 000 ppp para lograr una precisión que satisfaga incluso a los francotiradores digitales más exigentes. Las teclas Omron eficaces para 50 millones de clics garantizan que una vez que tienes apuntado el tiro a la cabeza, el clic quedará registrado de forma definitiva.</p>
-          </div>
-          <div class="spacer">&nbsp;</div>
-          <div class="block"><img src="images/demo/alloy.jpg" alt="" /><strong>HyperX Alloy Elite 2</strong>
-            <p>HyperX Alloy Elite 2 es el teclado para ti. Con teclas multimedia específicas y una gran rueda de volumen, este teclado para juegos multifunción está listo para todo, desde edición de vídeo hasta ver películas. Está construido con teclas mecánicas HyperX de gran fiabilidad equilibradas para velocidad y capacidad de respuesta, por lo que puedes confiar en las entradas de tu teclado.</p>
-          </div>
-          <div class="block"><img src="images/demo/blackwidow.jpg" alt="" /><strong>Razer Blackwidow V2</strong>
-            <p>Diseñados específicamente para juegos, los switches mecánicos de Razer ofrecen puntos de accionamiento y restablecimiento optimizados para que los comandos se ejecuten tal y como deberían, con una capacidad de respuesta ultrarrápida</p>
-          </div>
-          <div class="block last"><img src="images/demo/ProX.png" alt="" /><strong>Logitech PRO X</strong>
-            <p>El diseño PRO X de eficacia probada en torneos, ahora con interruptores GX profesionales intercambiables. Descubre cómo es el teclado mecánico para gaming personalizable, diseñado para los mejores deportistas de eSports del mundo.</p>
-          </div>
-        </div>
+
+
+  <!--- loader de pagina-->
+  <div class="loader"> <img src="images/demo/loading.gif" alt=""></div>
+  <!---encabezado de pagina-->
+  <div  class="covid"> <img src="images/demo/podria-ser.png"></div>
+
+
+  <div class="wrapper col1">
+    <div id="header" class="clear">
+      <div class="fl_left">
+        <h1><a href="index.html">Odyssey Gaming</a></h1>
+        
+        <p>La Tienda para mejorar tu rendimiento</p>
+        
       </div>
-      <!-- ########### -->
-      <div id="tabs-2" class="tabcontainer">
-        <h2 class="title">El equipo de odyssey recomienda sus audifonos personales!</h2>
-        <ul class="line clear">
-          <li>
-            <div class="imgholder"><a href="#"><img src="images/demo/cascos1.jpg" alt="" /></a></div>
-            <p class="name">Logitech G733</p>
+      <div class="fl_right"><a href="#"><img src="images/demo/icono3.1.png" alt=""  width="200"/></a></div>
+    </div>
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper col1">
+    <div id="topbar" class="clear">
+      <ul id="topnav">
+        <li class="active"><a href="index.html">Inicio</a></li>
+        <li><a href="pages/style-demo.html">Comentarios</a></li>
+        <li><a href="#">Menu</a>
+          <ul>
+            <li><a href="#">Carrito de compras</a></li>
+            <li><a href="#">Iniciar Sesion</a></li>
+            <li><a href="#">Registrate</a></li>
+          </ul>
+        </li>
+        <li><a href="pages/portfolio.html">Nosotros</a></li>
+        <li class="last"><a href="pages/gallery.html">Productos</a></li>
+      </ul>
+      <form action="#" method="post" id="search">
+        <fieldset>
+          <legend>Site Search</legend>
+          <input type="text" value="Busca en nuestra tienda&hellip;"
+            onfocus="this.value=(this.value=='Busca en nuestra tienda&hellip;')? '' : this.value ;" />
+          <input type="image" id="go" src="layout/images/search.gif" alt="Search" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper col1">
+    <div id="featured_slide">
+      <!-- ####################################################################################################### -->
+      <div id="slider">
+        <ul id="categories">
+          <li class="category">
+            <h2>Set up</h2>
+            <a href="#"><img src="images/demo/setup_1.jpg" alt="" /></a>
+            <p>Set up de Javiera Gatica armado por el equipo de odyssey.</p>
           </li>
-          <li>
-            <div class="imgholder"><a href="#"><img src="images/demo/cascos2.jpeg" alt="" /></a></div>
-            <p class="name">Logitech G533</p>
+          <li class="category">
+            <h2>Set up</h2>
+            <a href="#"><img src="images/demo/setup_simp_raul.png" alt="" /></a>
+            <p> Set up de Angela Ruiz Robles armado por el equipo de odyssey.</p>
           </li>
-          <li class="last">
-            <div class="imgholder"><a href="#"><img src="images/demo/cascos3.jpg" alt="" /></a></div>
-            <p class="name">HyperX Cloud Alpha</p>
+          <li class="category">
+            <h2>Set up</h2>
+            <a href="#"><img src="images/demo/perifericos_razer.jpg" alt="" /></a>
+            <p>Set up de Sebastian Fizcht armado por el equipo de odyssey.</p>
+          </li>
+          <li class="category">
+            <h2>Razer Hunstman</h2>
+            <a href="#"><img src="images/demo/periferico_raul_el_simp.png" alt="" /></a>
+            <p>Diseñado y probado por los jugadores del equipo Team Razer, este teclado para juegos cuenta con los
+              switches Razer más rápidos que se han diseñado jamás.</p>
+            <p class="readmore"><a
+                href="https://www2.razer.com/es-es/gaming-keyboards-keypads/razer-huntsman-tournament-edition"
+                target="_BLANK">Leer mas &raquo;</a></p>
+          </li>
+          <li class="category">
+            <h2>Hyperx quadcast</h2>
+            <a href="#"><img src="images/demo/hyperx.jpg" alt="" /></a>
+            <p>El HyperX QuadCast es ideal para el aspirante a streamer que busca un micrófono de condensador con sonido
+              de calidad. Viene con su propio soporte antivibraciones para ayudar a reducir los ruidos de la vida
+              diaria.</p>
+            <p class="readmore"><a href="https://www.hyperxgaming.com/es/microphone/quadcast-gaming-microphone"
+                target="_BLANK">Leer mas &raquo;</a></p>
+          </li>
+          <li class="category">
+            <h2>Logitech pro</h2>
+            <a href="#"><img src="images/demo/logitech.jpg" alt="" /></a>
+            <p>PRO Wireless está pensado para ser el ratón para gaming definitivo para los profesionales de eSports. Es
+              un ratón para gaming con un rendimiento y una precisión inigualables, que proporciona la confianza
+              necesarias para ganar.</p>
+            <p class="readmore"><a
+                href="https://www.logitechg.com/es-es/products/gaming-mice/pro-wireless-mouse.910-005273.html"
+                target="_BLANK">Leer mas &raquo;</a></p>
+          </li>
+          <li class="category">
+            <h2>Rog strix Helios</h2>
+            <a href="#"><img src="images/demo/sueno.jpg" alt="" /></a>
+            <p>Rog Strix Helios es un gabinete premium con tres paneles de vidrio templado, marco de aluminio refinado e
+              iluminacion RGB integrada en el panel frontal.</p>
+            <p class="readmore"><a href="https://rog.asus.com/cases/rog-strix-helios-model/" target="_BLANK">Leer mas
+                &raquo;</a></p>
           </li>
         </ul>
+        <a class="prev disabled"></a> <a class="next disabled"></a>
+        <div style="clear:both"></div>
       </div>
-      <!-- ########### -->
-      <div id="tabs-3" class="tabcontainer">
-        <div id="hpage_portfolio" class="clear">
-          <div class="fl_left">
-            <div id="portfolioslider">
-              <ul>
-                <li><img src="images/demo/viper2.png" alt="" /></li>
-              </ul>
+      <!-- ####################################################################################################### -->
+    </div>
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper col2">
+    <div id="container" class="clear">
+      <!-- ####################################################################################################### -->
+      <div id="tabcontainer">
+        <ul id="tabnav">
+          <li><a href="#tabs-1">Lo mas visto</a></li>
+          <li><a href="#tabs-2">Recomendacion de odyssey</a></li>
+          <li><a href="#tabs-3">Oferta!</a></li>
+        </ul>
+        <div id="tabs-1" class="tabcontainer">
+          <div id="hpage_services" class="clear">
+            <div class="block"><img src="images/demo/g502.jpg" alt="" /><strong>Logitech G502 HERO</strong>
+              <p>G502 HERO dispone de un sensor óptico avanzado para máxima precisión de seguimiento, iluminación RGB
+                personalizada, perfiles de juego personalizados, de 200 a 25.600 dpi y pesas reposicionables.</p>
+            </div>
+            <div class="block"><img src="images/demo/mamba.jpg" alt="" /><strong>Razer Mamba Elite</strong>
+              <p>El Razer Mamba Elite es el icónico ratón para juegos que conoces y te encanta, que cuenta con la mayor
+                iluminación Razer Chroma de la gama con 20 impresionantes zonas de iluminación.</p>
+            </div>
+            <div class="block last"><img src="images/demo/pulsefire.jpg" alt="" /><strong>HyperX Pulsefire
+                Surge</strong>
+              <p> Pulsefire Surge cuenta con ajustes nativos de PPP de hasta 16 000 ppp para lograr una precisión que
+                satisfaga incluso a los francotiradores digitales más exigentes. Las teclas Omron eficaces para 50
+                millones de clics garantizan que una vez que tienes apuntado el tiro a la cabeza, el clic quedará
+                registrado de forma definitiva.</p>
+            </div>
+            <div class="spacer">&nbsp;</div>
+            <div class="block"><img src="images/demo/alloy.jpg" alt="" /><strong>HyperX Alloy Elite 2</strong>
+              <p>HyperX Alloy Elite 2 es el teclado para ti. Con teclas multimedia específicas y una gran rueda de
+                volumen, este teclado para juegos multifunción está listo para todo, desde edición de vídeo hasta ver
+                películas. Está construido con teclas mecánicas HyperX de gran fiabilidad equilibradas para velocidad y
+                capacidad de respuesta, por lo que puedes confiar en las entradas de tu teclado.</p>
+            </div>
+            <div class="block"><img src="images/demo/blackwidow.jpg" alt="" /><strong>Razer Blackwidow V2</strong>
+              <p>Diseñados específicamente para juegos, los switches mecánicos de Razer ofrecen puntos de accionamiento
+                y restablecimiento optimizados para que los comandos se ejecuten tal y como deberían, con una capacidad
+                de respuesta ultrarrápida</p>
+            </div>
+            <div class="block last"><img src="images/demo/ProX.png" alt="" /><strong>Logitech PRO X</strong>
+              <p>El diseño PRO X de eficacia probada en torneos, ahora con interruptores GX profesionales
+                intercambiables. Descubre cómo es el teclado mecánico para gaming personalizable, diseñado para los
+                mejores deportistas de eSports del mundo.</p>
             </div>
           </div>
-          <div class="fl_right">
-            <h2>Razer Viper 8K</h2>
-            <p>El nuevo mouse de razer odyssey lo trae con una oferta imperdible</p>
-            <ul>
-              <li>Tecnología Razer HyperPolling para el tiempo de respuesta más rápido.</li>
-              <li>Switch óptico para ratón Razer™ de 2.ª generación sin riesgo a clicks fallidos.</li>
-              <li>Diseño ligero de 71 g para un control veloz sin esfuerzo.</li>
-            </ul>
-            <p>No te pierdas la mejor oferta de este mes muchos Helenos ya se han llevado el suyo QUE ESPERAS!</p>
+        </div>
+        <!-- ########### -->
+        <div id="tabs-2" class="tabcontainer">
+          <h2 class="title">El equipo de odyssey recomienda sus audifonos personales!</h2>
+          <ul class="line clear">
+            <li>
+              <div class="imgholder"><a href="#"><img src="images/demo/cascos1.jpg" alt="" /></a></div>
+              <p class="name">Logitech G733</p>
+            </li>
+            <li>
+              <div class="imgholder"><a href="#"><img src="images/demo/cascos2.jpeg" alt="" /></a></div>
+              <p class="name">Logitech G533</p>
+            </li>
+            <li class="last">
+              <div class="imgholder"><a href="#"><img src="images/demo/cascos3.jpg" alt="" /></a></div>
+              <p class="name">HyperX Cloud Alpha</p>
+            </li>
+          </ul>
+        </div>
+        <!-- ########### -->
+        <div id="tabs-3" class="tabcontainer">
+          <div id="hpage_portfolio" class="clear">
+            <div class="fl_left">
+              <div id="portfolioslider">
+                <ul>
+                  <li><img src="images/demo/viper2.png" alt="" /></li>
+                </ul>
+              </div>
+            </div>
+            <div class="fl_right">
+              <h2>Razer Viper 8K</h2>
+              <p>El nuevo mouse de razer odyssey lo trae con una oferta imperdible</p>
+              <ul>
+                <li>Tecnología Razer HyperPolling para el tiempo de respuesta más rápido.</li>
+                <li>Switch óptico para ratón Razer™ de 2.ª generación sin riesgo a clicks fallidos.</li>
+                <li>Diseño ligero de 71 g para un control veloz sin esfuerzo.</li>
+              </ul>
+              <p>No te pierdas la mejor oferta de este mes muchos Helenos ya se han llevado el suyo QUE ESPERAS!</p>
+            </div>
           </div>
         </div>
-      </div>
         <div id="column">
           <div id="featured">
             <ul>
               <li>
                 <h2>Marca mas vista este mes</h2>
                 <p class="imgholder"><img src="images/demo/Logo.jpg" alt="" /></p>
-                <p>Este mes la marca que se ha llevado el corazon de los Helenos es razer con un diseño increible en cada uno de sus productos ha enamorado a cada uno de nuestros clientes convirtiendose asi la marca de este mes!</p>              </li>
+                <p>Este mes la marca que se ha llevado el corazon de los Helenos es razer con un diseño increible en
+                  cada uno de sus productos ha enamorado a cada uno de nuestros clientes convirtiendose asi la marca de
+                  este mes!</p>
+              </li>
             </ul>
           </div>
         </div>
         <div class="clear"></div>
       </div>
-      <!-- ########### --> 
+      <!-- ########### -->
     </div>
-    <!-- ####################################################################################################### --> 
+    <!-- ####################################################################################################### -->
   </div>
-</div>
-<!-- ####################################################################################################### -->
-<div class="wrapper">
-  <div id="footer" class="clear">
-    <div class="footbox">
-      <h2>Acerca de nosotros.</h2>
-      <p>Somos <b>odyssey</b> una tienda de ventas de hardware y armados de pc de alta gama. Vendemos los mejores perifericos para mejorar tu rendimiento en tu partida.</p>
-      <p>Recuerda los fps ganan partidas.</p>
-    </div>
-    <div class="footbox">
-      <h2></h2>
-  
-    </div>
-    <div class="footbox">
-      <h2></h2>
-      
-    </div>
-    <div class="footbox last">
-      <h2>Mantengamonos en contacto</h2>
-      <ul>
-        <li><a href="https://www.facebook.com/odyssey.gaming.522" target="_BLANK"><img src="images/demo/facebook.png" alt="facebook">   Nuestro Facebook</a></li>
-        <li><a href="https://twitter.com/odyssey16446718" target="_BLANK"><img src="images/demo/twitter.png" alt="facebook">   Nuestro Tweeter</a></li>
-        
-      </ul>
-      <h2>Contactanos</h2>
-      <ul>
-        <li><strong class="title">Tel:</strong><br />
-          +569 5275 8784</li>
-        <li><strong class="title">Email:</strong><br />
-          <a href="https://www.google.com/intl/es-419/gmail/about/">odysseygaming.contact@gmail.com</a></li>
-      </ul>
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper">
+    <div id="footer" class="clear">
+      <div class="footbox">
+        <h2>Acerca de nosotros.</h2>
+        <p>Somos <b>odyssey</b> una tienda de ventas de hardware y armados de pc de alta gama. Vendemos los mejores
+          perifericos para mejorar tu rendimiento en tu partida.</p>
+        <p>Recuerda los fps ganan partidas.</p>
+      </div>
+      <div class="footbox">
+        <h2></h2>
+
+      </div>
+      <div class="footbox">
+        <h2></h2>
+
+      </div>
+      <div class="footbox last">
+        <h2>Mantengamonos en contacto</h2>
+        <ul>
+          <li><a href="https://www.facebook.com/odyssey.gaming.522" target="_BLANK"><img src="images/demo/facebook.png"
+                alt="facebook"> Nuestro Facebook</a></li>
+          <li><a href="https://twitter.com/odyssey16446718" target="_BLANK"><img src="images/demo/twitter.png"
+                alt="facebook"> Nuestro Tweeter</a></li>
+
+        </ul>
+        <h2>Contactanos</h2>
+        <ul>
+          <li><strong class="title">Tel:</strong><br />
+            +569 5275 8784</li>
+          <li><strong class="title">Email:</strong><br />
+            <a href="https://www.google.com/intl/es-419/gmail/about/">odysseygaming.contact@gmail.com</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
-<!-- ####################################################################################################### -->
-<div class="wrapper">
-  <div id="copyright" class="clear">
-    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="#">Domain Name</a></p>
-    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper">
+    <div id="copyright" class="clear">
+      <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="#">Domain Name</a></p>
+      <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/"
+          title="Free Website Templates">OS Templates</a></p>
+    </div>
   </div>
-</div>
+
+  <script>
+    setTimeout(function () {
+      $('.loader').fadeToggle();
+    }, 2000);
+
+  </script>
+
 </body>
+
 </html>
